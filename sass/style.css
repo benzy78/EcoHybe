@@ -392,6 +392,7 @@ select:focus {
 @media (max-width: 992px) {
   .section-ttl {
     font-size: 24px;
+    margin-bottom: 16px;
   }
 }
 
@@ -404,6 +405,7 @@ select:focus {
 @media (max-width: 992px) {
   .section-caption {
     font-size: 16px;
+    margin-bottom: 24px;
   }
 }
 
@@ -417,6 +419,7 @@ select:focus {
 @media (max-width: 992px) {
   .section-ttl--border {
     font-size: 24px;
+    padding-bottom: 12px;
   }
 }
 
@@ -504,6 +507,13 @@ select:focus {
   margin: 0 auto 16px;
   display: block;
 }
+@media (max-width: 768px) {
+  .about__card-icon {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 8px;
+  }
+}
 
 .about__card-ttl {
   font-size: 24px;
@@ -513,12 +523,18 @@ select:focus {
 @media (max-width: 768px) {
   .about__card-ttl {
     font-size: 20px;
+    margin-bottom: 8px;
   }
 }
 
 .about__card-caption {
   margin-bottom: 16px;
   font-weight: 400;
+}
+@media (max-width: 768px) {
+  .about__card-caption {
+    margin-bottom: 8px;
+  }
 }
 
 .about__card-list li {
@@ -696,6 +712,7 @@ select:focus {
   .miss__cont {
     flex-wrap: wrap;
     gap: 24px;
+    padding-top: 0;
   }
 }
 
@@ -729,6 +746,7 @@ select:focus {
 @media (max-width: 768px) {
   .miss__cont-ttl {
     font-size: 20px;
+    margin-bottom: 16px;
   }
 }
 .miss__cont-ttl img {

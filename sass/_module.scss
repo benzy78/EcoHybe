@@ -157,6 +157,7 @@
   margin-bottom: 24px;
   @include tab{
     font-size: 24px;
+    margin-bottom: 16px;
   }
 }
 .section-caption{
@@ -166,6 +167,7 @@
   font-weight: 400;
   @include tab{
     font-size: 16px;
+    margin-bottom: 24px;
   }
 }
 .section-ttl--border{
@@ -176,6 +178,7 @@
   border-bottom:1px solid $bgc-white;
   @include tab{
     font-size: 24px;
+    padding-bottom: 12px;
   }
 }
 .section-ttl--border02{

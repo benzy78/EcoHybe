@@ -55,6 +55,11 @@
   height: 88px;
   margin:0 auto 16px;
   display: block;
+  @include sp{
+    width: 64px;
+    height: 64px;
+    margin-bottom: 8px;
+  }
 }
 .about__card-ttl{
   font-size: 24px;
@@ -62,11 +67,15 @@
   text-align: center;
   @include sp{
     font-size: 20px;
+    margin-bottom: 8px;
   }
 }
 .about__card-caption{
   margin-bottom: 16px;
   font-weight: 400;
+  @include sp{
+    margin-bottom: 8px;
+  }
 }
 .about__card-list{
   li{
@@ -216,6 +225,7 @@
   @include sp{
     flex-wrap: wrap;
     gap: 24px;
+    padding-top: 0;
   }
 }
 .miss__cont-img{
@@ -240,6 +250,7 @@
   margin-bottom: 24px;
   @include sp{
     font-size: 20px;
+    margin-bottom: 16px;
   }
   img{
     width: 32px;
