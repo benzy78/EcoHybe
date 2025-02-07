@@ -1,0 +1,293 @@
+// selling
+.selling{
+  padding: 148px 5% 64px;
+  background-color: $bgc-green;
+  color: $secondary-color;
+  @include tab{
+    padding-top: 108px;
+  }
+}
+.selling__card{
+  display: flex;
+  background-color: $bgc-white;
+  border-radius: 5px;
+  margin-bottom: 48px;
+  @include sp{
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+  }
+  &:last-child{
+    margin-bottom: 0;
+  }
+}
+.selling__card-img{
+  width: 25%;
+  height: auto;
+  @include tab{
+    width: 35%;
+  }
+  @include sp{
+    width: 100%;
+  }
+}
+.selling__card-text{
+  width: 75%;
+  display: flex;
+  padding: 24px;
+  flex-direction: column;
+  justify-content: center;
+  @include tab{
+    width: 65%;
+  }
+  @include sp{
+    width: 100%;
+  }
+}
+.selling__card-ttl{
+  font-size: 24px;
+  margin-bottom: 24px;
+  @include tab{
+    font-size: 20px;
+  }
+}
+.selling__card-list{
+  li{
+    margin-bottom: 16px;
+    font-size: 20px;
+    @include tab{
+      font-size: 16px;
+    }
+    img{
+      width: 32px;
+      height: 32px;
+      margin-right: 8px;
+      vertical-align: middle;
+    }
+  }
+}
+// selling end
+
+// reason
+.reason{
+  padding: 48px 5% 64px;
+  background-color: $bgc-white;
+  color: $secondary-color;
+}
+.reason__list{
+  max-width: 540px;
+  margin: 0 auto 24px;
+  li{
+    font-size: 20px;
+    margin-bottom: 16px;
+    @include tab{
+      font-size: 16px;
+    }
+    img{
+      width: 48px;
+      height: 48px;
+      vertical-align: middle;
+      margin-right: 8px;
+      @include sp{
+        width: 32px;
+        height: 32px;
+      }
+    }
+  }
+}
+.reason__caption{
+  text-align: center;
+  font-weight: 400;
+}
+.reason__btn{
+  margin: 0 auto;
+}
+
+.mb48{
+  margin-bottom: 48px;
+}
+// reason end
+
+// purchasing
+.purchasing{
+  padding: 108px 5% 64px;
+  background-color: $bgc-green;
+  color: $secondary-color;
+}
+.purchasing__item-cont{
+  padding: 24px;
+  padding-top: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2%;
+  @include sp{
+    gap: 24px;
+  }
+}
+.purchasing__item{
+  width: 49%;
+  margin-bottom: 24px;
+  @include sp{
+    width: 100%;
+  }
+}
+.purchasing__item-ttl{
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+.purchasing__item-list{
+  li{
+    img{
+      width: 32px;
+      height: 32px;
+      vertical-align: middle;
+      margin-right: 8px;
+      margin-bottom: 16px;
+    }
+  }
+}
+.purchasing__item-caption{
+  margin-bottom: 24px;
+  img{
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+    vertical-align: middle;
+  }
+}
+
+.purchasing__process-card{
+  position: relative;
+  margin-top: 24px;
+}
+.purchasing__process-number{
+  background-color: $primary-color;
+  padding: 8px 26px;
+  color: $bgc-white;
+  border-radius: 100%;
+  position: absolute;
+  top: -32px;
+  left: 50%;
+  font-size: 32px;
+  transform: translateX(-50%);
+}
+.purchasing__process-ttl{
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 16px;
+  padding-top: 24px;
+}
+.purchasing__process-caption{
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+.purchasing__process-list{
+  li{
+    margin-bottom: 8px;
+    img{
+      width: 32px;
+      height: 32px;
+      margin-right: 8px;
+      vertical-align: middle;
+    }
+    span{
+      font-weight: 400;
+    }
+  }
+}
+// purchasing end
+
+// recruit
+.recruit{
+  padding: 108px 5% 64px;
+  background-color: $bgc-green;
+  color: $secondary-color;
+}
+.recruit__card-cont{
+  margin-bottom: 48px;
+}
+.recruit__card{
+  width: 45%;
+  @include tab{
+    width: 100%;
+  }
+}
+.recruit__card-ttl{
+  font-size: 20px;
+  margin-bottom: 16px;
+  img{
+    width: 32px;
+    height: 32px;
+    vertical-align: middle;
+    margin-right: 8px;
+  }
+}
+.recruit__card-list{
+  li{
+    margin-bottom: 8px;
+  }
+}
+.recruit__flow-list{
+  padding-left: 24px;
+  padding-right: 24px;
+  li{
+    margin-bottom: 16px;
+    font-size: 20px;
+    @include sp{
+      font-size: 16px;
+    }
+    span{
+      color: $primary-color;
+      font-size: 24px;
+      margin-right: 8px;
+      @include sp{
+        font-size: 20px;
+      }
+    }
+  }
+}
+// recruit end
+
+// commingsson
+.commingsoon{
+  padding: 200px 5% 200px;
+  background: $grdc;
+  color: $bgc-white;
+}
+.comm__ttl{
+  font-size: 40px;
+  margin-bottom: 64px;
+  text-align: center;
+  @include tab{
+    font-size: 32px;
+    margin-bottom: 48px;
+  }
+  @include sp{
+    font-size: 20px;
+  }
+  img{
+    width: 80px;
+    height: 80px;
+    margin-right: 8px;
+    vertical-align: top;
+    @include tab{
+      width: 64px;
+      height: 64px;
+    }
+    @include sp{
+      width: 48px;
+      height: 48px;
+    }
+  }
+}
+.comm__caption{
+  font-size: 20px;
+  margin-bottom: 64px;
+  text-align: center;
+  @include tab{
+    font-size: 16px;
+  }
+}
+.comm__btn{
+  margin: 0 auto;
+}
+// commingsson end

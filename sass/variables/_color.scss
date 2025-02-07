@@ -1,4 +1,19 @@
 // 色の定義
+// Primary,Secondary
+$primary-color:#009b4a;
+$secondary-color:#0f3c3b;
+// 背景色
+$bgc-white:#fff;
+$bgc-green:#f5ffea;
+$bgc-glay:#f0f0f0;
+// グラデーション
+$grdc:linear-gradient(270deg, #009B4A 0%, #005F3C 100%);
+$grdc-hover: linear-gradient(270deg, #007A3D 0%, #00452A 100%);
+
+// マスク
+$mask-black:rgba(0,0,0,0.7);
+$mask-light-black:rgba(0,0,0,0.4);
+
 
 $MainColor:#363636;
 $BaseColor1:#fff;

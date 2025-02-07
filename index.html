@@ -4,28 +4,318 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <title>Template</title>
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+    <title>Eco Hybeリサイクルショップ</title>
+    <meta name="description" content="リユース・アップサイクルのリサイクルショップEco Hybe">
+    <meta name="keywords" content="リサイクルショップ">
     <!--style css-->
     <link rel="stylesheet" href="./sass/style.css" media="all">
     <!--font-awesome-->
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap" rel="stylesheet">
+      
     <!--jquery-->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
     <!-- wow -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet"
         type="text/css" media="all">
+    
 
 </head>
 
 <body>
-    <div class="wrapper">
-        <header>
-            <h1>template</h1>
-        </header>
-    </div>
-    <!--wrapper end-->
+    <!-- header -->
+    <header class="header">
+        <div class="inner--large header__inner">
+            <h1 class="header__logo"><a href="./index.html"><img src="./images/ecohybe-logo.png" alt="Eco Hybe"></a></h1>
+            <nav class="header__nav">
+                <button class="menu-toggle" aria-label="Toggle navigation">
+                    <span class="menu-icon"></span>
+                    <span class="menu-icon"></span>
+                    <span class="menu-icon"></span>
+                    <span class="menu-label">Menu</span>
+                </button>
+                <ul class="header__nav-links">
+                    <li><a href="./index.html#about">EcoHybeについて</a></li>
+                    <li><a href="./html/sell.html">取り扱い商品</a></li>
+                    <li><a href="./html/purchase.html">買取</a></li>
+                    <li><a href="./index.html#information">会社情報</a></li>
+                    <li><a href="./index.html#question">よくある質問</a></li>
+                    <li><a href="">お問い合わせ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- header end -->
+     <!-- mainvisual -->
+      <section class="mainvisual fadein">
+        <div class="mv__inner-mask">
+            <div class="inner--large">
+                <h2 class="mv__ttl">モノの未来を、あなたとともに。</h2>
+                <p class="mv__caption">Eco Hybeは、リサイクルをもっと洗練されたものにするための場所。厳選したリユース品やアップサイクル商品を取り揃え、サステナブルで豊かな暮らしをサポートします。</p>
+                <div class="mv__btn">
+                    <a href="" class="btn-primary--small">不用品の買取へ</a>
+                    <a href="" class="btn-secondary--small">Eco Hybeで買い物をする</a>
+                </div>
+            </div>
+        </div>
+      </section>
+     <!-- mainvisual end -->
+      <!-- about -->
+       <section class="about" id="about">
+        <div class="inner--large">
+            <h2 class="section-ttl">Eco Hybeとは？</h2>
+            <p class="section-caption">Eco Hybeは、中古品の買取、販売、中古品のリメイクを行うリサイクルショップです。「販売」・「買取」・「リメイク」の3つのサービスを軸に、持続可能なライフスタイルをサポートします。</p>
+            <div class="about__contents card-container">
+                <div class="about__card card scroll-fadein">
+                    <img src="./images/shopping_cart_64dp_009B4A_FILL0_wght400_GRAD0_opsz48.svg" alt="カートのアイコン" class="about__card-icon">
+                    <h3 class="about__card-ttl">中古品・リメイク品の販売</h3>
+                    <p class="about__card-caption">Eco Hybeでは、厳選したリユース品やアップサイクル商品を販売。家具・家電・ファッション・雑貨など、多彩なアイテムをおしゃれで洗練された空間でご提供します。</p>
+                    <ul class="about__card-list">
+                        <li><img src="./images/check_circle_64dp_009B4A_FILL0_wght400_GRAD0_opsz48.svg" alt="チェックアイコン">丁寧にメンテナンスされた良質な中古品</li>
+                        <li><img src="./images/check_circle_64dp_009B4A_FILL0_wght400_GRAD0_opsz48.svg" alt="チェックアイコン">職人の手でリメイクされた一点もののアイテム</li>
+                        <li><img src="./images/check_circle_64dp_009B4A_FILL0_wght400_GRAD0_opsz48.svg" alt="チェックアイコン">サステナブルな暮らしを叶えるエコな選択</li>
+                    </ul>
+                </div>
+                <div class="about__card card scroll-fadein">
+                    <img src="./images/local_shipping_64dp_009B4A_FILL0_wght400_GRAD0_opsz48.svg" alt="トラックのアイコン" class="about__card-icon">
+                    <h3 class="about__card-ttl">不用品の買取</h3>
+                    <p class="about__card-caption">Eco Hybeでは、あなたの不要になった家具・家電・雑貨・ファッションアイテムを高価買取します。</p>
+                    <ul class="about__card-list">
+                        <li><img src="./images/check_circle_64dp_009B4A_FILL0_wght400_GRAD0_opsz48.svg" alt="チェックアイコン">オンライン査定&スピーディな買取対応</li>
+                        <li><img src="./images/check_circle_64dp_009B4A_FILL0_wght400_GRAD0_opsz48.svg" alt="チェックアイコン">店頭・出張買取OK！大型家具も対応</li>
+                        <li><img src="./images/check_circle_64dp_009B4A_FILL0_wght400_GRAD0_opsz48.svg" alt="チェックアイコン">売ることで捨てるより価値ある選択を！</li>
+                    </ul>
+                </div>
+                <div class="about__card card scroll-fadein">
+                    <img src="./images/handyman_64dp_009B4A_FILL0_wght400_GRAD0_opsz48.svg" alt="編集のアイコン" class="about__card-icon">
+                    <h3 class="about__card-ttl">中古品のリメイク</h3>
+                    <p class="about__card-caption">Eco Hybeでは、傷んだ家具や使わなくなったアイテムを修理・カスタムし、アップサイクルします。手放す選択ではなく生かす選択をご提案します！</p>
+                    <ul class="about__card-list">
+                        <li><img src="./images/check_circle_64dp_009B4A_FILL0_wght400_GRAD0_opsz48.svg" alt="チェックアイコン">ヴィンテージ家具の再生&デザインリメイク</li>
+                        <li><img src="./images/check_circle_64dp_009B4A_FILL0_wght400_GRAD0_opsz48.svg" alt="チェックアイコン">古着・雑貨のリメイクワークショップも開催</li>
+                        <li><img src="./images/check_circle_64dp_009B4A_FILL0_wght400_GRAD0_opsz48.svg" alt="チェックアイコン">廃棄ゼロを目指し、持続可能な社会を創る</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+       </section>
+      <!-- about end -->
+       <!-- sell -->
+        <section class="sell">
+            <div class="inner--large">
+                <h2 class="section-ttl">販売している中古品・リメイク品</h2>
+                <p class="section-caption">Eco Hybeでは、厳選されたリユースアイテムやリメイク品を取り扱い、サステナブルで洗練されたライフスタイルを提案します。「まだ使える」だけでなく、「より魅力的なアイテム」として、新しい持ち主のもとへつなぎます。</p>
+                <div class="sell__box-cont">
+                    <div class="sell__box sell__box--furniture  scroll-fadein">
+                        <div class="sell__box-inner">
+                            <h3 class="sell__box-ttl">家具・インテリア</h3>
+                        </div>
+                    </div>
+                    <div class="sell__box sell__box--home scroll-fadein">
+                        <div class="sell__box-inner">
+                            <h3 class="sell__box-ttl">家電・電子機器</h3>
+                        </div>
+                    </div>
+                    <div class="sell__box sell__box--fashion scroll-fadein">
+                        <div class="sell__box-inner">
+                            <h3 class="sell__box-ttl">ファッション・アクセサリー</h3>
+                        </div>
+                    </div>
+                    <div class="sell__box sell__box--book scroll-fadein">
+                        <div class="sell__box-inner">
+                            <h3 class="sell__box-ttl">本・ホビー</h3>
+                        </div>
+                    </div>
+                    <div class="sell__box sell__box--table scroll-fadein">
+                        <div class="sell__box-inner">
+                            <h3 class="sell__box-ttl">生活雑貨</h3>
+                        </div>
+                    </div>
+                    <div class="sell__box sell__box--remake scroll-fadein">
+                        <div class="sell__box-inner">
+                            <h3 class="sell__box-ttl">アップサイクル・リメイク品</h3>
+                        </div>
+                    </div>
+                </div>
+                <a href="./html/sell.html" class="btn-primary--large sell__btn">詳しく見る</a>
+            </div>
+        </section>
+       <!-- sell end -->
+        <!-- purchase -->
+         <section class="purchase">
+            <div class="inner--large">
+                <h2 class="section-ttl">買取サービスについて</h2>
+                <p class="section-caption">「使わなくなったものを、新たな価値へ」Eco Hybeでは、「簡単・スピーディー・高価買取」をモットーに、不要になったアイテムを次の誰かへ繋ぎます。家具・家電・ファッション・雑貨など、幅広いジャンルの買取を行なっています。</p>
+                <div class="purc__card-cont card-container">
+                    <div class="purc__card card scroll-fadein">
+                        <h3 class="purc__card-ttl">取り扱いカテゴリ</h3>
+                        <ul class="purc__card-list">
+                            <li><img src="./images/check_circle_64dp_009B4A_FILL0_wght400_GRAD0_opsz48.svg" alt="チェックアイコン">家具・インテリア</li>
+                            <li><img src="./images/check_circle_64dp_009B4A_FILL0_wght400_GRAD0_opsz48.svg" alt="チェックアイコン">家電・デジタル機器</li>
+                            <li><img src="./images/check_circle_64dp_009B4A_FILL0_wght400_GRAD0_opsz48.svg" alt="チェックアイコン">ファッション・アクセサリー</li>
+                            <li><img src="./images/check_circle_64dp_009B4A_FILL0_wght400_GRAD0_opsz48.svg" alt="チェックアイコン">本・ホビー</li>
+                            <li><img src="./images/check_circle_64dp_009B4A_FILL0_wght400_GRAD0_opsz48.svg" alt="チェックアイコン">食器・生活雑貨</li>
+                        </ul>
+                        <p class="purc__card-caption mb0">「売れるかわからない...」そんな時はお気軽にご相談ください！</p>
+                    </div>
+                    <div class="purc__card card scroll-fadein">
+                        <h3 class="purc__card-ttl">3つの買取方法</h3>
+                        <h4 class="purc__card-subttl"><img src="./images/check_circle_64dp_009B4A_FILL0_wght400_GRAD0_opsz48.svg" alt="チェックアイコン">店頭買取</h4>
+                        <p class="purc__card-caption">直接店舗にお持ち込みいただければ、スタッフが即査定＆お支払い！</p>
+                        <h4 class="purc__card-subttl"><img src="./images/check_circle_64dp_009B4A_FILL0_wght400_GRAD0_opsz48.svg" alt="チェックアイコン">出張買取</h4>
+                        <p class="purc__card-caption">家具や家電などの大きな商品は、スタッフがご自宅までお伺い！</p>
+                        <h4 class="purc__card-subttl"><img src="./images/check_circle_64dp_009B4A_FILL0_wght400_GRAD0_opsz48.svg" alt="チェックアイコン">オンライン査定</h4>
+                        <p class="purc__card-caption">事前にLINEやWebフォームで写真を送り、査定後は商品を送るだけ！</p>
+                    </div>
+                    <div class="purc__card card scroll-fadein">
+                        <h3 class="purc__card-ttl">Eco Hybeが選ばれる理由</h3>
+                        <ul class="purc__card-list">
+                            <li class="mb24"><img src="./images/editor_choice_64dp_009B4A_FILL0_wght400_GRAD0_opsz48.svg" alt="チェックアイコン">シンプル3ステップでスピーディな取引！</li>
+                            <li class="mb24"><img src="./images/editor_choice_64dp_009B4A_FILL0_wght400_GRAD0_opsz48.svg" alt="チェックアイコン">適正査定＆高価買取</li>
+                            <li><img src="./images/editor_choice_64dp_009B4A_FILL0_wght400_GRAD0_opsz48.svg" alt="チェックアイコン">買取後のアイテムはリユース・アップサイクルで新たな命を！</li>
+                        </ul>
+                    </div>
+                </div>
+                <a href="" class="btn-primary--large purc__btn">買取サービス詳細へ</a>
+            </div>
+         </section>
+        <!-- purchase end -->
+         <!-- mission -->
+          <section class="mission" id="mission">
+            <div class="inner--small">
+                <h2 class="section-ttl--border">企業理念</h2>
+                <div class="miss__cont scroll-fadein">
+                    <div class="miss__cont-text">
+                        <h3 class="miss__cont-ttl"><img src="./images/check_circle_64dp_009B4A_FILL0_wght400_GRAD0_opsz48.svg" alt="チェックアイコン">価値あるモノを未来へ繋ぐ</h3>
+                        <p class="miss__cont-caption">すぐに捨てられるのではなく、新しい持ち主へと受け継がれることで、モノの価値はさらに深まります。Eco Hybeでは、リユース・リメイクを通じて「もう一度輝く」アイテムを提供します。</p>
+                    </div>
+                    <img src="./images/mission1.webp" alt="アイキャッチ" class="miss__cont-img">
+                </div>
+                <div class="miss__cont scroll-fadein">
+                    <img src="./images/sustanable.webp" alt="アイキャッチ" class="miss__cont-img order2">
+                    <div class="miss__cont-text order1">
+                        <h3 class="miss__cont-ttl"><img src="./images/check_circle_64dp_009B4A_FILL0_wght400_GRAD0_opsz48.svg" alt="チェックアイコン">サステナブルな社会への貢献</h3>
+                        <p class="miss__cont-caption">リユースやアップサイクルは、ただのエコ活動ではなく、選択肢の一つとして楽しめるものであるべき。おしゃれで洗練されたアイテムを取り揃え、エコな選択が我慢ではなく、当たり前の文化となる社会を目指します。</p>
+                    </div>
+                </div>
+            </div>
+          </section>
+         <!-- mission end -->
+          <!-- voice -->
+           <section class="voice" id="voice">
+            <div class="inner--large">
+                <h2 class="section-ttl">利用者の声</h2>
+                <p class="section-caption">Eco Hybeを利用したお客様から、リアルな感想をいただきました。「エコな選択を、もっと楽しく」 そんな想いが伝わる体験談をご紹介します。</p>
+                <div class="voice__card-cont card-container">
+                    <div class="voice__card card scroll-fadein">
+                        <h3 class="voice__card-ttl">「初めての買取がスムーズで安心」</h3>
+                        <p class="voice__card-user"><img src="./images/account_circle_64dp_009B4A_FILL0_wght400_GRAD0_opsz48.svg" alt="ユーザーアイコン">佐藤 剛（30代 会社員）</p>
+                        <p class="voice__card-serv"><img src="./images/room_service_64dp_009B4A_FILL0_wght400_GRAD0_opsz48.svg" alt="サービスアイコン">利用サービス：家具の買取</p>
+                        <p class="voice__card-caption">「引っ越しで不要になった家具を買い取ってもらいました。大きな家具だったのでどうしようか迷っていましたが、出張買取をお願いしたらスムーズに対応してくれました。しかも、ただ売るだけじゃなくて、リメイクされて次の人に使われると聞いて、エコな選択ができたなと実感！ また利用したいです。」</p>
+                    </div>
+                    <div class="voice__card card scroll-fadein">
+                        <h3 class="voice__card-ttl">「探していたものが見つかる！」</h3>
+                        <p class="voice__card-user"><img src="./images/account_circle_64dp_009B4A_FILL0_wght400_GRAD0_opsz48.svg" alt="ユーザーアイコン">山本 賢（40代 自営業）</p>
+                        <p class="voice__card-serv"><img src="./images/room_service_64dp_009B4A_FILL0_wght400_GRAD0_opsz48.svg" alt="サービスアイコン">利用サービス：ビンテージ家具の購入</p>
+                        <p class="voice__card-caption">「Eco Hybeは普通のリサイクルショップとは違って、セレクトされたおしゃれなアイテムが多い印象。特に家具は一点ものが多く、状態もすごく良い。デザイン性の高いヴィンテージ家具を探していたので、ここで理想のテーブルを見つけたときは嬉しかったです。リメイクされたアイテムもクオリティが高くて、リユース品でも満足できる買い物ができました。」</p>
+                    </div>
+                    <div class="voice__card card scroll-fadein">
+                        <h3 class="voice__card-ttl">「中古なのに新品のよう！」</h3>
+                        <p class="voice__card-user"><img src="./images/account_circle_64dp_009B4A_FILL0_wght400_GRAD0_opsz48.svg" alt="ユーザーアイコン">中村 彩（30代 主婦）</p>
+                        <p class="voice__card-serv"><img src="./images/room_service_64dp_009B4A_FILL0_wght400_GRAD0_opsz48.svg" alt="サービスアイコン">生活雑貨の購入</p>
+                        <p class="voice__card-caption">「ブランドの食器セットを見つけたんですが、新品同様の状態でお得に買えました。ここなら品質がしっかり管理されているので、安心して買い物できます。他にも、気に入ったデザインのワイングラスも目に留まり、中古とは思えないキレイさで、思わず買ってしまいました！」</p>
+                    </div>
+                </div>
+            </div>
+           </section>
+          <!-- voice end -->
+           <!-- question -->
+            <section class="question" id="question">
+                <div class="inner--small">
+                    <h2 class="section-ttl">よくある質問</h2>
+                    <div class="ques__card scroll-fadein">
+                        <h3 class="ques__card-ttl"><span class="capital">Q.</span>どんなものを買い取ってもらえますか？</h3>
+                        <span class="ques__card-btn"></span>
+                        <p class="ques__card-caption"><span class="capital">A.</span>Eco Hybeでは、家具・家電・ファッション・雑貨・本・ホビーアイテムなど、幅広いジャンルの買取を行っています。ただし、破損が激しいものや安全基準を満たさない家電など、一部お受けできないものもございます。詳しくは[買取対象品リスト]をご確認いただくか、お気軽にお問い合わせください！</p>
+                    </div>
+                    <div class="ques__card scroll-fadein">
+                        <h3 class="ques__card-ttl"><span class="capital">Q.</span>買取の査定にはどれくらいの時間がかかりますか？</h3>
+                        <span class="ques__card-btn"></span>
+                        <p class="ques__card-caption"><span class="capital">A.</span>店頭査定の場合は、通常10～30分程度で査定結果をご案内します。出張買取や大量のアイテムの査定には、多少お時間をいただくことがありますが、できる限りスムーズに対応いたします。事前にオンライン査定（写真を送るだけ）をご利用いただくと、よりスピーディーにお取引できます！</p>
+                    </div>
+                    <div class="ques__card scroll-fadein">
+                        <h3 class="ques__card-ttl"><span class="capital">Q.</span>商品の状態はどのくらい良いですか？</h3>
+                        <span class="ques__card-btn"></span>
+                        <p class="ques__card-caption"><span class="capital">A.</span>当店では、買取後のアイテムを専門スタッフがメンテナンス・クリーニングを行い、品質チェックを徹底しています。そのため、中古品でも新品同様にきれいな状態のアイテムが多く、お客様からも安心して購入できるとご好評いただいています！</p>
+                    </div>
+                    <div class="ques__card scroll-fadein">
+                        <h3 class="ques__card-ttl"><span class="capital">Q.</span>購入した商品に不具合があった場合、返品・交換はできますか？</h3>
+                        <span class="ques__card-btn"></span>
+                        <p class="ques__card-caption"><span class="capital">A.</span>基本的に中古品のため、購入後の返品・交換はお受けしておりません。ただし、動作不良や記載されていない重大な欠陥があった場合は、購入から１ヶ月以内であれば対応いたします。ご不明な点があれば、お気軽にお問い合わせください！</p>
+                    </div>
+                </div>
+            </section>
+           <!-- question end -->
+            <!-- information -->
+             <section class="information" id="information">
+                <div class="inner--large">
+                    <h2 class="section-ttl">会社情報</h2>
+                    <div class="info__cont scroll-fadein">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d93179.52227532759!2d141.27161849494647!3d43.12846563690677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f0b2f5943e1efa7%3A0xff06820d398043a0!2z5YyX5rW36YGT5pyt5bmM5biC5YyX5Yy6!5e0!3m2!1sja!2sjp!4v1738852807931!5m2!1sja!2sjp" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="info__map order2"></iframe>
+                        <div class="info__text order1">
+                            <ul class="info__text-list">
+                                <li>会社名：Eco Hybe（エコ ハイブ）</li>
+                                <li>住所：〒000-XXXX 北海道札幌市X区XXX町X-X</li>
+                                <li>営業時間：10:00〜20:00</li>
+                                <li>Tel：000-xxxx-xxxx</li>
+                            </ul>
+                            <a href="" class="btn-secondary--small">お問い合わせ</a>
+                        </div>
+                    </div>
+                </div>
+             </section>
+            <!-- information end -->
+             <!-- footer -->
+              <footer class="footer">
+                <div class="inner--large">
+                    <div class="footer__cont">
+                        <div class="footer__info">
+                            <h2 class="footer__info-logo"><img src="./images/ecohybe-logo.png" alt="Eco Hybe"></h2>
+                            <ul class="footer__info-list">
+                                <li>〒000-XXXX 北海道札幌市X区XXX町X-X</li>
+                                <li>営業時間：10:00〜20:00</li>
+                                <li>Tel：000-xxxx-xxxx</li>
+                            </ul>
+                        </div>
+                        <div class="footer__nav">
+                            <h3 class="footer__nav-ttl">サイトマップ</h3>
+                            <nav>
+                                <ul class="footer__nav-list">
+                                    <li><a href="./index.html">ホーム</a></li>
+                                    <li><a href="./index.html#about">Eco Hybeについて</a></li>
+                                    <li><a href="">買取サービス</a></li>
+                                    <li><a href="">中古品・リメイク品の販売</a></li>
+                                    <li><a href="">お問い合わせ</a></li>
+                                    <li><a href="./index.html#information">会社情報</a></li>
+                                    <li><a href="./index.html#question">よくある質問</a></li>
+                                    <li><a href="">採用情報</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="footer__sns">
+                            <h3 class="footer__sns-ttl">SNS</h3>
+                            <ul class="footer__sns-list">
+                                <li><a href="">Instagram</a></li>
+                                <li><a href="">X（旧：Twitter）</a></li>
+                                <li><a href="">Facebook</a></li>
+                                <li><a href="">LINE＠</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+              </footer>
+             <!-- footer end -->
 
     <!-- script js-->
     <script src="js/script.js"></script>

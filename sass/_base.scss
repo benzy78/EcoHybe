@@ -16,7 +16,7 @@ body {
 }
 
 body {
-	font-family: $ff-gothic;
+	font-family: $ff-base;
 	font-size: $fz-base;
 	font-weight: $fw-base;
 	color: $MainColor;
@@ -53,7 +53,9 @@ a:link,a:visited,a:hover,a:active{
 }
 
 
-
+li{
+	list-style: none;
+}
 
 table {
 	border-collapse: collapse;

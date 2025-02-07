@@ -1,0 +1,192 @@
+.inner--large{
+  max-width: 1240px;
+  width: 100%;
+  margin: 0 auto;
+}
+.inner--small{
+  max-width: 1040px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+// btn
+.btn-primary--small{
+  max-width: 264px;
+  width: 100%;
+  padding: 24px 0;
+  text-align: center;
+  display: block;
+  background: $grdc;
+  border-radius: 40px;
+  color: $bgc-white;
+  transition: all 0.3s ease-in-out;
+  font-size: 20px;
+  line-height: 1;
+  &:hover{
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px); 
+    background: $grdc-hover;
+  }
+  &:active{
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3); 
+    transform: translateY(1px);
+    background: $grdc;
+  }
+  @include sp{
+    max-width: 100%;
+    padding: 16px;
+    font-size: 16px;
+  }
+}
+
+.btn-secondary--small{
+  max-width: 264px;
+  width: 100%;
+  padding: 24px 0;
+  text-align: center;
+  display: block;
+  background:$bgc-white ;
+  border-radius: 40px;
+  border: 1px solid $primary-color;
+  color: $primary-color;
+  transition: all 0.3s ease-in-out;
+  font-size: 20px;
+  line-height: 1;
+  &:hover{
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px); 
+    background-color: $bgc-glay;
+  }
+  &:active{
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3); 
+    transform: translateY(1px);
+    background-color: $bgc-white;
+  }
+  @include sp{
+    max-width: 100%;
+    padding: 16px;
+    font-size: 16px;
+  }
+}
+
+.btn-primary--large{
+  max-width: 350px;
+  width: 100%;
+  padding: 24px 0;
+  text-align: center;
+  display: block;
+  background: $grdc;
+  border-radius: 40px;
+  color: $bgc-white;
+  transition: all 0.3s ease-in-out;
+  font-size: 20px;
+  line-height: 1;
+  &:hover{
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px); 
+    background: $grdc-hover;
+  }
+  &:active{
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3); 
+    transform: translateY(1px);
+    background: $grdc;
+  }
+  @include sp{
+    max-width: 100%;
+    padding: 16px;
+    font-size: 16px;
+  }
+}
+
+.btn-secondary--large{
+  max-width: 350px;
+  width: 100%;
+  padding: 24px 0;
+  text-align: center;
+  display: block;
+  background:$bgc-white ;
+  border-radius: 40px;
+  border: 1px solid $primary-color;
+  color: $primary-color;
+  transition: all 0.3s ease-in-out;
+  font-size: 20px;
+  line-height: 1;
+  &:hover{
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px); 
+    background-color: $bgc-glay;
+  }
+  &:active{
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3); 
+    transform: translateY(1px);
+    background-color: $bgc-white;
+  }
+  @include sp{
+    max-width: 100%;
+    padding: 16px;
+    font-size: 16px;
+  }
+}
+
+
+// card
+.card-container{
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  @include tab{
+    flex-wrap: wrap;
+  }
+}
+.card{
+  width: 33.3%;
+  padding: 24px;
+  background-color: $bgc-white;
+  border-radius: 5px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  margin: 0 auto;
+  max-width: 600px;
+  @include tab{
+    width: 100%;
+  }
+}
+// section ttl, caption
+.section-ttl{
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 24px;
+  @include tab{
+    font-size: 24px;
+  }
+}
+.section-caption{
+  max-width: 800px;
+  margin: 0 auto 48px;
+  font-size: 20px;
+  font-weight: 400;
+  @include tab{
+    font-size: 16px;
+  }
+}
+.section-ttl--border{
+  font-size: 32px;
+  padding-bottom: 24px;
+  padding-left: 24px;
+  margin-bottom: 24px;
+  border-bottom:1px solid $bgc-white;
+  @include tab{
+    font-size: 24px;
+  }
+}
+.section-ttl--border02{
+  font-size: 24px;
+  padding-bottom: 16px;
+  padding-left: 24px;
+  margin-bottom: 24px;
+  border-bottom:1px solid $secondary-color;
+  @include tab{
+    font-size: 20px;
+    margin-bottom: 24px;
+    padding-bottom: 12px;
+  }
+}

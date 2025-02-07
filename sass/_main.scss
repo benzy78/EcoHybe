@@ -1,0 +1,473 @@
+// main visual
+.mainvisual{
+  background-image: url(../images/mainvisual.webp);
+  background-size: cover;
+  background-position: top left;
+  color:$bgc-white;
+  @include sp{
+    background-position: 65% 50%;
+  }
+}
+.mv__inner-mask{
+  padding: 248px 5% 200px;
+  width: 100%;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.80) 0.24%, rgba(102, 102, 102, 0.10) 99.34%);
+  @include sp{
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.80) 0.24%, rgba(36, 36, 36, 0.40) 99.34%);
+    padding: 148px 5% 64px;
+  }
+}
+.mv__ttl{
+  font-size: 48px;
+  margin-bottom: 24px;
+  font-weight: 500;
+  @include sp{
+    font-size: 32px;
+  }
+}
+.mv__caption{
+  max-width: 680px;
+  font-size: 20px;
+  margin-bottom: 48px;
+  @include sp{
+    font-size: 16px;
+  }
+}
+.mv__btn{
+  display: flex;
+  gap: 24px;
+  @include sp{
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+}
+// main visual end
+
+// about
+.about{
+  padding: 48px 5% 64px;
+  background-color: $bgc-green;
+  color: $secondary-color;
+}
+
+.about__card-icon{
+  width: 88px;
+  height: 88px;
+  margin:0 auto 16px;
+  display: block;
+}
+.about__card-ttl{
+  font-size: 24px;
+  margin-bottom: 16px;
+  text-align: center;
+  @include sp{
+    font-size: 20px;
+  }
+}
+.about__card-caption{
+  margin-bottom: 16px;
+  font-weight: 400;
+}
+.about__card-list{
+  li{
+    font-weight: 400;
+    margin-bottom: 8px;
+    img{
+      width: 24px;
+      height: 24px;
+      vertical-align: middle;
+      margin-right: 4px;
+    }
+  }
+}
+// about end
+
+// sell
+.sell{
+  padding: 48px 5% 64px;
+  color: $secondary-color;
+}
+.sell__box-cont{
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 48px;
+  @include tab{
+    flex-wrap: wrap;
+  }
+}
+.sell__box{
+  width: 33.3%;
+  background-size: cover;
+  border: 1px solid $bgc-white;
+  @include tab{
+    width: 50%;
+  }
+  @include sp{
+    width: 100%;
+  }
+}
+.sell__box--furniture{
+  background-image: url(../images/funiture.webp);
+}
+.sell__box--home{
+  background-image: url(../images/home-appliance.webp);
+}
+.sell__box--fashion{
+  background-image: url(../images/fashion.webp);
+}
+.sell__box--book{
+  background-image: url(../images/book.webp);
+}
+.sell__box--table{
+  background-image: url(../images/tableware.webp);
+}
+.sell__box--remake{
+  background-image: url(../images/remake.webp);
+}
+.sell__box-inner{
+  background-color: $mask-light-black;
+  padding: 140px 0;
+  @include sp{
+    padding: 80px 0;
+  }
+}
+.sell__box-ttl{
+  font-size: 24px;
+  color: $bgc-white;
+  text-align: center;
+  @include sp{
+    font-size: 20px;
+  }
+}
+.sell__btn{
+  margin: 0 auto;
+}
+// sell end
+
+// purchase
+.purchase{
+  padding: 48px 5% 64px;
+  background-color: $bgc-green;
+  color: $secondary-color;
+}
+.purc__card-cont{
+  margin-bottom: 48px;
+}
+.purc__card-ttl{
+  font-size: 24px;
+  margin-bottom: 24px;
+  text-align: center;
+  @include sp{
+    font-size: 20px;
+  }
+}
+.purc__card-list{
+  margin-bottom: 24px;
+  li{
+    font-size: 20px;
+    margin-bottom: 8px;
+    @include sp{
+      font-size: 16px;
+    }
+    img{
+      width: 32px;
+      height: 32px;
+      vertical-align: text-top;
+      margin-right: 8px;
+    }
+  }
+}
+.purc__card-subttl{
+  font-size: 20px;
+  img{
+    width: 32px;
+    height: 32px;
+    vertical-align: text-top;
+    margin-right: 8px;
+  }
+
+}
+.purc__card-caption{
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+.mb0{
+  margin-bottom: 0;
+}
+.mb24{
+  margin-bottom: 24px;
+}
+.purc__btn{
+  margin: 0 auto;
+}
+// purchase end
+
+// mission
+.mission{
+  padding: 48px 5% 64px;
+  background-color: $secondary-color;
+  color: $bgc-white;
+}
+.miss__cont{
+  display: flex;
+  margin-bottom: 24px;
+  gap: 48px;
+  padding: 24px;
+  @include sp{
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+}
+.miss__cont-img{
+  max-width: 35%;
+  width: 100%;
+  height: auto;
+  @include sp{
+    max-width: 100%;
+  }
+}
+.miss__cont-text{
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  @include sp{
+    width: 100%;
+  }
+}
+.miss__cont-ttl{
+  font-size: 24px;
+  margin-bottom: 24px;
+  @include sp{
+    font-size: 20px;
+  }
+  img{
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+    vertical-align: middle;
+    @include sp{
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
+.miss__cont-caption{
+  font-size: 20px;
+  @include sp{
+    font-size: 16px;
+  }
+}
+.order1{
+  @include sp{
+    order: 1;
+  }
+  
+}
+.order2{
+  @include sp{
+    order: 2;
+  }
+}
+// mission end
+
+// voice
+.voice{
+  padding: 48px 5% 64px;
+  background-color: $bgc-green;
+  color: $secondary-color;
+}
+.voice__card-ttl{
+  font-size: 20px;
+  margin-bottom: 16px;
+  text-align: center;
+}
+.voice__card-user{
+  margin-bottom: 16px;
+  img{
+    width: 32px;
+    height: 32px;
+    vertical-align: middle;
+    margin-right: 8px;
+    @include sp{
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
+.voice__card-serv{
+  margin-bottom: 16px;
+  img{
+    width: 32px;
+    height: 32px;
+    vertical-align: middle;
+    margin-right: 8px;
+    @include sp{
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
+.voice__card-caption{
+  text-align: justify;
+  font-weight: 400;
+}
+// voice end
+
+// question
+.question{
+  padding: 48px 5% 64px;
+  background-color: $bgc-white;
+  color: $secondary-color;
+}
+.ques__card{
+  border: 1px solid $bgc-glay;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  margin-bottom: 24px;
+  padding: 24px;
+  @include sp{
+    padding: 16px;
+  }
+  &:last-child{
+    margin-bottom: 0;
+  }
+}
+.ques__card-ttl{
+  font-size: 20px;
+  margin-bottom: 8px;
+  @include sp{
+    font-size: 16px;
+    width: 80%;
+  }
+}
+.capital{
+  font-size: 32px;
+  color: $primary-color;
+  margin-right: 8px;
+  @include sp{
+    font-size: 24px;
+  }
+}
+.ques__card-caption{
+  font-size: 16px;
+  font-weight: 400;
+  @include sp{
+    display: none;
+  }
+}
+
+.ques__card-btn{
+  top: 16px;
+  right: 16px;
+  width: 44px;
+  height: 44px;
+  background-color:$primary-color;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  display: none;
+  @include sp{
+    display: block;
+  }
+}
+
+.ques__card-btn::before,
+.ques__card-btn::after {
+  content: "";
+  position: absolute;
+  background-color: $bgc_white;
+  transition: all 0.3s ease-in-out;
+}
+
+.ques__card-btn::before {
+  width: 60%;
+  height: 3px;
+  top: 21px;
+  left: 9px;
+}
+
+.ques__card-btn::after {
+  width: 3px;
+  height: 60%;
+  top:  9px;
+  left: 21px;
+}
+
+.turn.ques__card-btn::before,
+.turn.ques__card-btn::after {
+  -webkit-transform: translateY(0) rotate(135deg);
+  -ms-transform: translateY(0) rotate(135deg);
+  transform: translateY(0) rotate(135deg);
+}
+// question end
+
+// information
+.information{
+  background-color: $bgc-green;
+  padding: 48px 5% 64px;
+  color: $secondary-color;
+}
+.info__cont{
+  display: flex;
+  gap: 48px;
+  justify-content: space-between;
+  @include sp{
+    flex-wrap: wrap;
+  }
+}
+.info__map{
+  width: 50%;
+  height: 350px;
+  @include sp{
+    width: 100%;
+    height: 300px;
+  }
+}
+.info__text{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  @include sp{
+    width: 100%;
+  }
+}
+.info__text-list{
+  li{
+    font-size: 20px;
+    margin-bottom: 24px;
+    font-weight: 400;
+    @include sp{
+      font-size: 16px;
+    }
+  }
+}
+// information end
+
+// アニメーション
+.fadein {
+  opacity: 0; 
+  transform: translateY(50px);
+  transition: all 0.5s ease-in-out;
+}
+
+.fadein.show{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.scroll-fadein {
+  opacity: 0; 
+  transform: translateY(50px);
+  transition: all 0.5s ease-in-out;
+}
+
+.scroll-fadein.show{
+  opacity: 1;
+  transform: translateY(0);
+}
