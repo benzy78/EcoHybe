@@ -23,12 +23,12 @@
   font-size: 20px;
   line-height: 1;
   &:hover{
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transform: translateY(-2px); 
     background: $grdc-hover;
   }
   &:active{
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3); 
+    box-shadow: none; 
     transform: translateY(1px);
     background: $grdc;
   }
@@ -53,12 +53,12 @@
   font-size: 20px;
   line-height: 1;
   &:hover{
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transform: translateY(-2px); 
     background-color: $bgc-glay;
   }
   &:active{
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3); 
+    box-shadow: none; 
     transform: translateY(1px);
     background-color: $bgc-white;
   }
@@ -82,12 +82,12 @@
   font-size: 20px;
   line-height: 1;
   &:hover{
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transform: translateY(-2px); 
     background: $grdc-hover;
   }
   &:active{
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3); 
+    box-shadow: none; 
     transform: translateY(1px);
     background: $grdc;
   }
@@ -112,12 +112,12 @@
   font-size: 20px;
   line-height: 1;
   &:hover{
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transform: translateY(-2px); 
     background-color: $bgc-glay;
   }
   &:active{
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3); 
+    box-shadow: none; 
     transform: translateY(1px);
     background-color: $bgc-white;
   }
@@ -143,7 +143,7 @@
   padding: 24px;
   background-color: $bgc-white;
   border-radius: 5px;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1);
   margin: 0 auto;
   max-width: 600px;
   @include tab{
