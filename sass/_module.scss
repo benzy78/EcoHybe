@@ -11,16 +11,16 @@
 
 // btn
 .btn-primary--small{
-  max-width: 264px;
+  max-width: 240px;
   width: 100%;
-  padding: 24px 0;
+  padding: 16px 24px;
   text-align: center;
   display: block;
   background: $grdc;
   border-radius: 40px;
   color: $bgc-white;
   transition: all 0.3s ease-in-out;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 1;
   &:hover{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -40,9 +40,9 @@
 }
 
 .btn-secondary--small{
-  max-width: 264px;
+  max-width: 240px;
   width: 100%;
-  padding: 24px 0;
+  padding: 16px 24px;
   text-align: center;
   display: block;
   background:$bgc-white ;
@@ -50,7 +50,7 @@
   border: 1px solid $primary-color;
   color: $primary-color;
   transition: all 0.3s ease-in-out;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 1;
   &:hover{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -70,16 +70,16 @@
 }
 
 .btn-primary--large{
-  max-width: 350px;
+  max-width: 320px;
   width: 100%;
-  padding: 24px 0;
+  padding: 24px;
   text-align: center;
   display: block;
   background: $grdc;
   border-radius: 40px;
   color: $bgc-white;
   transition: all 0.3s ease-in-out;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 1;
   &:hover{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -99,9 +99,9 @@
 }
 
 .btn-secondary--large{
-  max-width: 350px;
+  max-width: 320px;
   width: 100%;
-  padding: 24px 0;
+  padding: 24px;
   text-align: center;
   display: block;
   background:$bgc-white ;
@@ -109,7 +109,7 @@
   border: 1px solid $primary-color;
   color: $primary-color;
   transition: all 0.3s ease-in-out;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 1;
   &:hover{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -161,9 +161,11 @@
   }
 }
 .section-caption{
-  max-width: 800px;
+  max-width: 680px;
   margin: 0 auto 48px;
-  font-size: 20px;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  line-height: 2;
   font-weight: 400;
   @include tab{
     font-size: 16px;
