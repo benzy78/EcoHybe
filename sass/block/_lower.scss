@@ -291,3 +291,108 @@
   margin: 0 auto;
 }
 // commingsson end
+
+
+// contact
+.contact{
+  padding: 148px 5% 64px;
+  background-color: #fff;
+  color: $secondary-color;
+  @include tab{
+    padding-top: 108px;
+  }
+}
+.contact-form {
+  color: $secondary-color;
+  max-width: 800px;
+  margin:0 auto 32px;
+}
+
+.form-row {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  @include sp{
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+
+.form-row.full {
+  flex-direction: column;
+  align-items: flex-start;
+  button{
+    margin: 0 auto;
+  }
+}
+
+label {
+  width: 200px;
+  font-weight: normal;
+  padding-top: 10px;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  color: $secondary-color;
+  @include sp{
+    font-size: 14px;
+    width: 100%;
+  }
+}
+
+.required {
+  color: #a52a2a;
+  font-size: 14px;
+  margin-left: 4px;
+  @include sp{
+    font-size: 12px;
+  }
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  flex: 1;
+  padding: 16px;
+  font-size: 16px;
+  background: #f7f7f7;
+  border: none;
+  border-radius: 8px;
+  resize: vertical;
+  color: $secondary-color;
+  @include sp{
+    font-size: 16px;
+    width: 100%;
+  }
+}
+
+textarea {
+  min-height: 200px;
+}
+
+.consent {
+  font-size: 14px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 16px;
+  span{
+    margin-left: 24px;
+  }
+}
+
+.consent a {
+  color: #3b82f6;
+  text-decoration: underline;
+}
+
+button {
+  background: $primary-color;
+  color: white;
+  padding: 14px 24px;
+  font-size: 16px;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.3s;
+  line-height: 1.5;
+}
+
