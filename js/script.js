@@ -48,11 +48,15 @@ document.addEventListener("DOMContentLoaded", () => {
   
   // よくある質問のアコーディオン
   $(document).ready(function() {
-    $(".ques__card-btn").click(function () {
-      $(this).next(".ques__card-caption").slideToggle(300);
-      $(this).toggleClass("turn");
-    });
+  $(".ques__card-btn").click(function () {
+    // 最も近い .ques__card から中の .ques__card-caption を探す
+    $(this).closest(".ques__card").find(".ques__card-caption").slideToggle(300);
+    $(this).toggleClass("turn");
   });
+});
+
+
+
 // よくある質問のアコーディオン end
 
 });

@@ -1,38 +1,36 @@
 // main visual
 .mainvisual{
-  background-image: url(../images/mainvisual.webp);
+  background-image: url(../images/EH_MV.png);
   background-size: cover;
-  background-position: top left;
+  background-position: left top;
   color:$bgc-white;
   @include sp{
-    background-position: 65% 50%;
+    background-position: 60% top;
   }
 }
 .mv__inner-mask{
-  padding: 248px 40px;
+  padding: 520px 40px 120px;
   width: 100%;
   background: linear-gradient(90deg, rgba(0, 0, 0, 0.80) 0.24%, rgba(102, 102, 102, 0.10) 99.34%);
   @include sp{
     background: linear-gradient(90deg, rgba(0, 0, 0, 0.80) 0.24%, rgba(36, 36, 36, 0.40) 99.34%);
-    padding: 148px 5% 64px;
+    padding: 400px 20px 64px;
   }
 }
 .mv__ttl{
-  font-size: 48px;
-  line-height: 1.5;
-  margin-bottom: 24px;
-  font-weight: 500;
-  letter-spacing: 0.02em;
+  font-size: 56px;
+  line-height: 1.25;
+  margin-bottom: 20px;
+  font-weight: bold;
+  letter-spacing: 0.08em;
   @include sp{
     font-size: 32px;
   }
 }
 .mv__caption{
   max-width: 640px;
-  font-size: 16px;
-  line-height: 2;
-  margin-bottom: 32px;
-  letter-spacing: 0.02em;
+  font-size: 20px;
+  letter-spacing: 0.08em;
   @include sp{
     font-size: 16px;
   }
@@ -49,42 +47,56 @@
 
 // about
 .about{
-  padding: 48px 5% 64px;
-  background-color: $bgc-green;
-  color: $secondary-color;
+  padding: 40px 40px;
+  background-color: $BgGreen;
+  color: $TextDef;
+  position: relative;
+  z-index: 0;
+  @include sp{
+    padding: 40px 20px 64px;
+  }
+  .inner--large{
+    position: relative;
+  }
 }
 
 .about__card-icon{
-  width: 88px;
-  height: 88px;
+  width: 64px;
+  height: 64px;
   margin:0 auto 16px;
   display: block;
   @include sp{
-    width: 64px;
-    height: 64px;
-    margin-bottom: 8px;
+    width: 48px;
+    height: 48px;
   }
 }
 .about__card-ttl{
-  font-size: 24px;
+  font-size: 20px;
+  letter-spacing: 0.02em;
+  line-height: 1;
   margin-bottom: 16px;
   text-align: center;
-  @include sp{
-    font-size: 20px;
-    margin-bottom: 8px;
-  }
 }
 .about__card-caption{
   margin-bottom: 16px;
+  font-size: 16px;
+  line-height: 1.75;
+  letter-spacing: 0.02em;
   font-weight: 400;
   @include sp{
     margin-bottom: 8px;
+    font-size: 14px;
   }
 }
 .about__card-list{
   li{
+    font-size: 16px;
+    letter-spacing: 0.02em;
     font-weight: 400;
-    margin-bottom: 8px;
+    margin-bottom: 12px;
+    @include sp{
+      font-size: 14px;
+    }
     img{
       width: 24px;
       height: 24px;
@@ -97,151 +109,217 @@
 
 // sell
 .sell{
-  padding: 48px 5% 64px;
-  color: $secondary-color;
-}
-.sell__box-cont{
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 48px;
-  @include tab{
-    flex-wrap: wrap;
-  }
-}
-.sell__box{
-  width: 33.3%;
-  background-size: cover;
-  border: 1px solid $bgc-white;
-  @include tab{
-    width: 50%;
-  }
+  position: relative;
+  padding: 40px 40px 64px;
+  background-color: $BgGreen;
+  z-index: 0;
   @include sp{
-    width: 100%;
+    padding: 20px 20px;
+  }
+  .inner--large{
+    position: relative;
   }
 }
-.sell__box--furniture{
-  background-image: url(../images/funiture.webp);
-}
-.sell__box--home{
-  background-image: url(../images/home-appliance.webp);
-}
-.sell__box--fashion{
-  background-image: url(../images/fashion.webp);
-}
-.sell__box--book{
-  background-image: url(../images/book.webp);
-}
-.sell__box--table{
-  background-image: url(../images/tableware.webp);
-}
-.sell__box--remake{
-  background-image: url(../images/remake.webp);
-}
-.sell__box-inner{
-  background-color: $mask-light-black;
-  padding: 140px 0;
+.sell__half-circle{
+  position: absolute;
+  bottom: 0px;
+  right: 0;
+  width: 360px;
+  height: 360px;
+  background-color: $Primary100;
+  border-radius:100% 0 0 0;
+  z-index: -2;
   @include sp{
-    padding: 80px 0;
+    width: 240px;
+    height: 240px;
   }
 }
-.sell__box-ttl{
-  font-size: 24px;
-  color: $bgc-white;
-  text-align: center;
-  @include sp{
-    font-size: 20px;
+.sell__list{
+  margin-bottom: 40px;
+  li{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin-bottom: 16px;
+    img{
+      width: 32px;
+      height: 32px;
+      @include sp{
+        width: 24px;
+        height: 24px;
+      }
+    }
+    span{
+      font-size: 20px;
+      letter-spacing: 0.02em;
+      @include sp{
+        font-size: 16px;
+      }
+    }
   }
-}
-.sell__btn{
-  margin: 0 auto;
 }
 // sell end
 
 // purchase
 .purchase{
-  padding: 48px 5% 64px;
-  background-color: $bgc-green;
-  color: $secondary-color;
+  padding: 40px 40px 64px;
+  background-color: $BgGreen;
+  z-index: 0;
+  position: relative;
+  @include sp{
+    padding: 20px 20px 40px;
+  }
+  .inner--large{
+    position: relative;
+  }
 }
 .purc__card-cont{
-  margin-bottom: 48px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  margin-bottom: 40px;
+  @include sp{
+    grid-template-columns: repeat(1, 1fr);
+    gap: 40px;
+    margin-bottom: 24px;
+  }
 }
 .purc__card-ttl{
   font-size: 24px;
-  margin-bottom: 24px;
-  text-align: center;
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+  margin-bottom: 12px;
   @include sp{
-    font-size: 20px;
+    font-size: 16px;
   }
 }
 .purc__card-list{
-  margin-bottom: 24px;
+  margin-bottom: 16px;
+  @include sp{
+    margin-bottom: 8px;
+  }
   li{
-    font-size: 20px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    font-size: 16px;
     margin-bottom: 8px;
     @include sp{
-      font-size: 16px;
+      font-size: 14px;
     }
     img{
       width: 32px;
       height: 32px;
-      vertical-align: text-top;
-      margin-right: 8px;
+      @include sp{
+        width: 24px;
+        height: 24px;
+      }
     }
   }
 }
 .purc__card-subttl{
   font-size: 20px;
+  display: flex;
+  align-items: center;
+  gap:8px;
+  letter-spacing: 0.02em;
+  @include sp{
+    font-size: 16px;
+  }
   img{
     width: 32px;
     height: 32px;
-    vertical-align: text-top;
-    margin-right: 8px;
+    @include sp{
+      width: 24px;
+      height: 24px;
+    }
   }
-
 }
 .purc__card-caption{
-  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.02em;
   margin-bottom: 16px;
+  @include sp{
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
 }
-.mb0{
-  margin-bottom: 0;
+
+.purc__square-circle01{
+  position: absolute;
+  top: 0px;
+  right: 0;
+  width: 360px;
+  height: 360px;
+  background-color: $Primary100;
+  border-radius: 0 0 0 100%;
+  z-index: -2;
+  @include sp{
+    width: 240px;
+    height: 240px;
+  }
 }
-.mb24{
-  margin-bottom: 24px;
-}
-.purc__btn{
-  margin: 0 auto;
+.purc__square-circle02{
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 280px;
+  height: 280px;
+  background-color: $Primary100;
+  border-radius: 0 100% 0 0;
+  z-index: -2;
+  @include sp{
+    width: 200px;
+    height: 200px;
+  }
 }
 // purchase end
 
 // mission
 .mission{
-  padding: 48px 5% 64px;
-  background-color: $secondary-color;
-  color: $bgc-white;
+  padding: 40px 40px 64px;
+  background-color: $BgGreen;
+  position: relative;
+  z-index: 0;
+  @include sp{
+    padding: 40px 20px;
+  }
+  .inner--large{
+    position: relative;
+  }
 }
 .miss__cont{
   display: flex;
   margin-bottom: 24px;
-  gap: 48px;
-  padding: 24px;
+  gap: 40px;
+  justify-content: space-between;
   @include sp{
     flex-wrap: wrap;
-    gap: 24px;
-    padding-top: 0;
   }
 }
+.miss__number{
+  font-family: 'Caveat';
+  font-size: 40px;
+  letter-spacing: 0.08em;
+  line-height: 1;
+  color: $Primary500;
+}
 .miss__cont-img{
-  max-width: 35%;
+  max-width: calc(30% - 20px);
   width: 100%;
   height: auto;
+  display: block;
+  box-shadow: 0 8px 12px 6px rgba(0, 0, 0, 0.15), 0 4px 4px 0 rgba(0, 0, 0, 0.30);
+  border-radius: 12px;
+  transform: rotate(8deg);
   @include sp{
-    max-width: 100%;
+    max-width: 80%;
+    margin:0 auto ;
   }
 }
 .miss__cont-text{
-  width: 65%;
+  max-width: 640px;
+  width: calc(70% - 20px);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -250,11 +328,11 @@
   }
 }
 .miss__cont-ttl{
-  font-size: 24px;
-  margin-bottom: 24px;
+  font-size: 32px;
+  margin-bottom: 12px;
   @include sp{
     font-size: 20px;
-    margin-bottom: 16px;
+    margin-bottom: 8px;
   }
   img{
     width: 32px;
@@ -275,78 +353,51 @@
     font-size: 14px;
   }
 }
-.order1{
-  @include sp{
-    order: 1;
-  }
-  
-}
-.order2{
-  @include sp{
-    order: 2;
-  }
+
+.miss__square-circle{
+  position: absolute;
+  bottom: 0px;
+  left: 100px;
+  width: 400px;
+  height: 240px;
+  background-color: $Primary100;
+  border-radius: 100vh 100vh 0 0;
+  z-index: -2;   
 }
 // mission end
 
-// voice
-.voice{
-  padding: 48px 5% 64px;
-  background-color: $bgc-green;
-  color: $secondary-color;
-}
-.voice__card-ttl{
-  font-size: 20px;
-  margin-bottom: 16px;
-  text-align: center;
-}
-.voice__card-user{
-  margin-bottom: 16px;
-  img{
-    width: 32px;
-    height: 32px;
-    vertical-align: middle;
-    margin-right: 8px;
-    @include sp{
-      width: 24px;
-      height: 24px;
-    }
-  }
-}
-.voice__card-serv{
-  margin-bottom: 16px;
-  img{
-    width: 32px;
-    height: 32px;
-    vertical-align: middle;
-    margin-right: 8px;
-    @include sp{
-      width: 24px;
-      height: 24px;
-    }
-  }
-}
-.voice__card-caption{
-  text-align: justify;
-  font-weight: 400;
-  font-size: 14px;
-  letter-spacing: 0.02em;
-  line-height: 2;
-}
-// voice end
-
 // question
 .question{
-  padding: 48px 5% 64px;
-  background-color: $bgc-white;
-  color: $secondary-color;
+  padding: 40px 40px 64px;
+  background-color: $BgGreen;
+  position: relative;
+  z-index:0;
+  @include sp{
+    padding: 40px 20px;
+  }
+  .inner--large{
+    position: relative;
+  }
+}
+.ques__square-circle{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 90%;
+  height: 100vh;
+  background-color: $Primary100;
+  border-radius: 100% 0 0 0;
+  z-index: -2;   
 }
 .ques__card{
-  border: 1px solid $bgc-glay;
-  border: 1px solid #ccc;
-  // box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
+  background-color: $BgWhite;
+  border: 1px solid $BorderDef;
+  border-radius: 12px;
   margin-bottom: 24px;
-  padding: 24px;
+  padding: 20px;
+  max-width: 880px;
+  margin:0 auto 24px;
+  position: relative;
   @include sp{
     padding: 16px;
   }
@@ -354,20 +405,25 @@
     margin-bottom: 0;
   }
 }
+.ques__card-row{
+  position: relative;
+}
 .ques__card-ttl{
-  font-size: 20px;
-  margin-bottom: 8px;
+  font-size: 16px;
+  letter-spacing: 0.02em;
   @include sp{
-    font-size: 16px;
-    width: 80%;
+    font-size: 14px;
   }
 }
 .capital{
-  font-size: 32px;
-  color: $primary-color;
+  font-size: 28px;
+  letter-spacing: 0.02em;
+  line-height: 1;
+  font-weight: bold;
+  color: $Primary500;
   margin-right: 8px;
   @include sp{
-    font-size: 24px;
+    font-size: 20px;
   }
 }
 .ques__card-caption{
@@ -375,27 +431,30 @@
   letter-spacing: 0.02em;
   line-height: 2;
   font-weight: 400;
+  margin-top: 8px;
   @include sp{
-    display: none;
+    // display: none;
+    font-size: 14px;
   }
 }
 
 .ques__card-btn{
-  top: 16px;
-  right: 16px;
+  // top: 50%;
+  // transform: translateY(-50%);
+  top: 0;
+  right: 0;
   width: 44px;
   height: 44px;
-  background-color:$primary-color;
+  background-color:$Primary500;
   border-radius: 50%;
   display: flex;
-  justify-content: center;
   align-items: center;
   position: absolute;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
   display: none;
   @include sp{
-    display: block;
+    // display: block;
   }
 }
 
@@ -431,44 +490,56 @@
 
 // information
 .information{
-  background-color: $bgc-green;
-  padding: 48px 5% 64px;
-  color: $secondary-color;
+  background-color: $BgGreen;
+  padding: 40px 40px 64px;
+  z-index: 0;
+  position: relative;
+  padding: 40px 20px;
+  .inner--large{
+    position: relative;
+  }
 }
 .info__cont{
   display: flex;
-  gap: 48px;
+  gap: 40px;
   justify-content: space-between;
+  align-items: center;
   @include sp{
     flex-wrap: wrap;
+    gap: 24px;
   }
 }
 .info__map{
-  width: 50%;
+  width: calc(50% - 20px);
   height: 350px;
   @include sp{
     width: 100%;
     height: 300px;
   }
 }
-.info__text{
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.info__list{
+  width: calc(50% - 20px);
   @include sp{
     width: 100%;
   }
 }
-.info__text-list{
-  li{
-    font-size: 16px;
-    letter-spacing: 0.02em;    
-    margin-bottom: 24px;
-    font-weight: 400;
-    @include sp{
-      font-size: 14px;
-    }
+.info__list-row{
+  display: grid;
+  grid-template-columns: 3fr 7fr;
+  margin-bottom: 16px;
+}
+.info__list-ttl{
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  @include sp{
+    font-size: 14px;
+  }
+}
+.info__list-detail{
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  @include sp{
+    font-size: 14px;
   }
 }
 // information end
@@ -494,4 +565,40 @@
 .scroll-fadein.show{
   opacity: 1;
   transform: translateY(0);
+}
+
+// 汎用マージン
+.mb0{
+  margin-bottom: 0;
+}
+.mb24{
+  margin-bottom: 24px;
+}
+.mb40{
+  margin-bottom: 40px;
+  @include sp{
+    margin-bottom: 24px;
+  }
+}
+.mb48{
+  margin-bottom: 48px;
+}
+.mb64{
+  margin-bottom: 64px;
+  @include sp{
+    margin-bottom: 40px;
+  }
+}
+
+// その他
+.order1{
+  @include sp{
+    order: 1;
+  }
+  
+}
+.order2{
+  @include sp{
+    order: 2;
+  }
 }

@@ -1,15 +1,187 @@
 .inner--large{
+  // position: relative;
   max-width: 1240px;
   width: 100%;
   margin: 0 auto;
+  z-index: 0;
 }
 .inner--small{
+  position: relative;
   max-width: 1040px;
   width: 100%;
   margin: 0 auto;
 }
 
 // btn
+.btn-container{
+  margin: 0 auto;
+  max-width: 320px;
+  width: 100%;
+}
+.primary-btn{
+  position: relative;
+  z-index: 10;
+  display: flex;
+  gap: 8px;
+  color: $TextInverse;
+  justify-content: center;
+  align-items: center;
+  max-width: 320px;
+  width: 100%;
+  padding: 16px 24px;
+  background: $PrimaryGrad;
+  border-radius: 48px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16);
+  &:hover{
+    opacity: 0.7;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+  }
+  @include sp{
+    padding: 12px 24px;
+  }
+  .primary-btn-text{
+    text-align: center;
+    display: block;
+    color: $TextInverse;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.04em;
+    line-height: 1;
+    @include sp{
+      font-size: 14px;
+    }
+  }
+  img{
+    display: block;
+  }
+}
+
+// card
+.card-container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  @include tab{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include sp{
+    grid-template-columns: repeat(1, 1fr);
+    gap: 24px;
+  }
+}
+.card{
+  position: relative;
+  padding: 20px;
+  background-color: $bgc-white;
+  border-radius: 12px;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  max-width: 600px;
+  @include tab{
+    width: 100%;
+  }
+}
+
+.card-number{
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  font-size: 64px;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  font-weight: bold;
+  font-family: 'Caveat';
+  color: $Primary200;
+  @include sp{
+    font-size: 56px;
+  }
+}
+
+// section label, ttl, caption
+.section-deco-text{
+  font-size: 88px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  line-height: 1;
+  color: $Primary100;
+  text-align: right;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 0;
+  @include tab{
+    font-size: 64px;
+  }
+  @include sp{
+    font-size: 36px;
+  }
+}
+.section-label{
+  font-size: 24px;
+  letter-spacing: 0.04em;
+  margin-bottom: 8px;
+  color: $Primary500;
+  line-height: 1;
+  @include sp{
+    font-size: 20px;
+  }
+}
+.section-ttl{
+  font-size: 40px;
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+  margin-bottom: 12px;
+  max-width: 620px;
+  @include tab{
+    font-size: 32px;
+  }
+  @include sp{
+    font-size: 24px;
+  }
+}
+.section-desc{
+  font-size: 16px;
+  max-width: 600px;
+  letter-spacing: 0.02em;
+  line-height: 2;
+  font-weight: 400;
+  margin-bottom: 40px;
+  @include tab{
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  @include sp{
+    font-size: 14px;
+  }
+}
+
+
+
+// 以下いらないかも
+.section-ttl--border{
+  font-size: 32px;
+  padding-bottom: 24px;
+  padding-left: 24px;
+  margin-bottom: 24px;
+  border-bottom:1px solid $bgc-white;
+  @include tab{
+    font-size: 24px;
+    padding-bottom: 12px;
+  }
+}
+.section-ttl--border02{
+  font-size: 24px;
+  padding-bottom: 16px;
+  padding-left: 24px;
+  margin-bottom: 24px;
+  border-bottom:1px solid $secondary-color;
+  @include tab{
+    font-size: 20px;
+    margin-bottom: 24px;
+    padding-bottom: 12px;
+  }
+}
 .btn-primary--small{
   max-width: 240px;
   width: 100%;
@@ -125,73 +297,5 @@
     max-width: 100%;
     padding: 16px;
     font-size: 16px;
-  }
-}
-
-
-// card
-.card-container{
-  display: flex;
-  justify-content: space-between;
-  gap: 24px;
-  @include tab{
-    flex-wrap: wrap;
-  }
-}
-.card{
-  width: 33.3%;
-  padding: 24px;
-  background-color: $bgc-white;
-  border-radius: 5px;
-  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1);
-  margin: 0 auto;
-  max-width: 600px;
-  @include tab{
-    width: 100%;
-  }
-}
-// section ttl, caption
-.section-ttl{
-  text-align: center;
-  font-size: 32px;
-  margin-bottom: 24px;
-  @include tab{
-    font-size: 24px;
-    margin-bottom: 16px;
-  }
-}
-.section-caption{
-  max-width: 680px;
-  margin: 0 auto 48px;
-  font-size: 16px;
-  letter-spacing: 0.02em;
-  line-height: 2;
-  font-weight: 400;
-  @include tab{
-    font-size: 16px;
-    margin-bottom: 24px;
-  }
-}
-.section-ttl--border{
-  font-size: 32px;
-  padding-bottom: 24px;
-  padding-left: 24px;
-  margin-bottom: 24px;
-  border-bottom:1px solid $bgc-white;
-  @include tab{
-    font-size: 24px;
-    padding-bottom: 12px;
-  }
-}
-.section-ttl--border02{
-  font-size: 24px;
-  padding-bottom: 16px;
-  padding-left: 24px;
-  margin-bottom: 24px;
-  border-bottom:1px solid $secondary-color;
-  @include tab{
-    font-size: 20px;
-    margin-bottom: 24px;
-    padding-bottom: 12px;
   }
 }

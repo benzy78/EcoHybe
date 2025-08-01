@@ -1,4 +1,39 @@
 // 色の定義
+
+// プライマリー
+$PrimaryGrad:linear-gradient(270deg, #A9CE54 0%, #1FB43E 100%);
+$PrimaryGradHover:linear-gradient(270deg, #87a545 0%, #199032 100%);
+$Primary500:#1fb43f;
+$Primary200:#A4E1B1;
+$Primary100:#e6f8ea;
+
+// バックグラウンドカラー
+$BgWhite:#fff;
+$BgGreen:#fcfffd;
+
+// テキストカラー
+$TextDef:#2a2a2a;
+$TextInverse:#fff;
+
+// マスク
+$mask-black:rgba(0,0,0,0.7);
+$mask-light-black:rgba(0,0,0,0.4);
+
+// ボーダー
+$BorderDef:#E0E0E0;
+
+
+
+
+
+$MainColor:#2a2a2a;
+$BaseColor1:#fff;
+// $BaseColor2:;
+// $AccentColor1:;
+// $AccentColor2:;
+// $InnerMask:rgba(54,54,54,0.6);
+
+// 以下消す
 // Primary,Secondary
 $primary-color:#009b4a;
 $secondary-color:#0f3c3b;
@@ -9,15 +44,3 @@ $bgc-glay:#f0f0f0;
 // グラデーション
 $grdc:linear-gradient(270deg, #009B4A 0%, #005F3C 100%);
 $grdc-hover: linear-gradient(270deg, #007A3D 0%, #00452A 100%);
-
-// マスク
-$mask-black:rgba(0,0,0,0.7);
-$mask-light-black:rgba(0,0,0,0.4);
-
-
-$MainColor:#363636;
-$BaseColor1:#fff;
-// $BaseColor2:;
-// $AccentColor1:;
-// $AccentColor2:;
-// $InnerMask:rgba(54,54,54,0.6);
