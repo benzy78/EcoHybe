@@ -1722,6 +1722,9 @@ select:focus {
     padding: 40px 20px;
   }
 }
+.reason .inner--large {
+  position: relative;
+}
 
 .reason__list {
   margin-bottom: 40px;
