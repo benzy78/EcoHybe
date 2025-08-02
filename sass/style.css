@@ -562,7 +562,7 @@ select:focus {
 }
 
 .mainvisual {
-  background-image: url(../images/EH_MV.png);
+  background-image: url(../images/EH_MV.jpg);
   background-size: cover;
   background-position: left top;
   color: #fff;
@@ -1027,7 +1027,7 @@ select:focus {
   bottom: 0;
   right: 0;
   width: 90%;
-  height: 100vh;
+  height: 100%;
   background-color: #e6f8ea;
   border-radius: 100% 0 0 0;
   z-index: -2;
