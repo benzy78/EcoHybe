@@ -2058,8 +2058,8 @@ select:focus {
 
 .commingsoon {
   padding: 200px 5% 200px;
-  background: linear-gradient(270deg, #009B4A 0%, #005F3C 100%);
-  color: #fff;
+  background-color: #fcfffd;
+  color: #2a2a2a;
 }
 
 .comm__ttl {
