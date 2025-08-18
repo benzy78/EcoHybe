@@ -1,6 +1,6 @@
 // main visual
 .mainvisual{
-  background-image: url(../images/EH_MV.jpg);
+  background-image: url(../images/EH_MV.webp);
   background-size: cover;
   background-position: left top;
   color:$bgc-white;
@@ -9,7 +9,7 @@
   }
 }
 .mv__inner-mask{
-  padding: 520px 40px 120px;
+  padding: 500px 40px 120px;
   width: 100%;
   background: linear-gradient(90deg, rgba(0, 0, 0, 0.80) 0.24%, rgba(102, 102, 102, 0.10) 99.34%);
   @include sp{
@@ -299,7 +299,7 @@
 }
 .miss__number{
   font-family: 'Caveat';
-  font-size: 40px;
+  font-size: 48px;
   letter-spacing: 0.08em;
   line-height: 1;
   color: $Primary500;

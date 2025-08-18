@@ -359,7 +359,7 @@ select:focus {
   font-size: 24px;
   letter-spacing: 0.04em;
   margin-bottom: 8px;
-  color: #1fb43f;
+  color: #1eab3c;
   line-height: 1;
 }
 @media (max-width: 768px) {
@@ -562,7 +562,7 @@ select:focus {
 }
 
 .mainvisual {
-  background-image: url(../images/EH_MV.jpg);
+  background-image: url(../images/EH_MV.webp);
   background-size: cover;
   background-position: left top;
   color: #fff;
@@ -574,7 +574,7 @@ select:focus {
 }
 
 .mv__inner-mask {
-  padding: 520px 40px 120px;
+  padding: 500px 40px 120px;
   width: 100%;
   background: linear-gradient(90deg, rgba(0, 0, 0, 0.8) 0.24%, rgba(102, 102, 102, 0.1) 99.34%);
 }
@@ -920,10 +920,10 @@ select:focus {
 
 .miss__number {
   font-family: "Caveat";
-  font-size: 40px;
+  font-size: 48px;
   letter-spacing: 0.08em;
   line-height: 1;
-  color: #1fb43f;
+  color: #1eab3c;
 }
 
 .miss__cont-img {
@@ -1071,7 +1071,7 @@ select:focus {
   letter-spacing: 0.02em;
   line-height: 1;
   font-weight: bold;
-  color: #1fb43f;
+  color: #1eab3c;
   margin-right: 8px;
 }
 @media (max-width: 768px) {
@@ -1098,7 +1098,7 @@ select:focus {
   right: 0;
   width: 44px;
   height: 44px;
-  background-color: #1fb43f;
+  background-color: #1eab3c;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -1314,7 +1314,7 @@ select:focus {
 }
 .header__logo:hover {
   background-color: rgb(255, 255, 255);
-  border: 2px solid #1fb43f;
+  border: 2px solid #1eab3c;
 }
 @media (max-width: 992px) {
   .header__logo {
@@ -1357,7 +1357,7 @@ select:focus {
 }
 
 .menu-icon {
-  background-color: #1fb43f;
+  background-color: #1eab3c;
   height: 3px;
   width: 28px;
   border-radius: 8px;
@@ -1427,7 +1427,7 @@ select:focus {
   transition: all 0.3s ease-in-out;
 }
 .header__nav-links li a:hover {
-  color: #1fb43f;
+  color: #1eab3c;
 }
 @media (max-width: 992px) {
   .header__nav-links li a {
@@ -1664,7 +1664,7 @@ select:focus {
   letter-spacing: 0.08em;
   line-height: 1;
   margin-bottom: 12px;
-  color: #1fb43f;
+  color: #1eab3c;
 }
 @media (max-width: 768px) {
   .selling__cate-label {
@@ -1848,7 +1848,7 @@ select:focus {
   font-size: 20px;
   letter-spacing: 0.08em;
   line-height: 1;
-  color: #1fb43f;
+  color: #1eab3c;
   font-weight: bold;
   margin-bottom: 8px;
 }
@@ -1958,7 +1958,7 @@ select:focus {
 }
 
 .purchasing__process-number {
-  color: #1fb43f;
+  color: #1eab3c;
   letter-spacing: 0.08em;
   font-size: 20px;
   line-height: 1;
